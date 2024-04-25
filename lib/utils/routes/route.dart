@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:mvvm_strructure/utils/routes/route_names.dart';
-import 'package:mvvm_strructure/view/home_screen.dart';
-import 'package:mvvm_strructure/view/login_screen.dart';
+import 'package:mvvm_strructure/view/home_view.dart';
+import 'package:mvvm_strructure/view/login_view.dart';
 
 class Routes {
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
-      case RouteName.homeScreen:
+      case RouteName.homeView:
         return MaterialPageRoute(
-          builder: (context) => const HomeScreen(),
+          builder: (context) => const HomeView(),
         );
-      case RouteName.loginScreen:
+      case RouteName.loginView:
         return MaterialPageRoute(
-          builder: (context) => const LoginScreen(),
+          builder: (context) => const LoginView(),
         );
 
       default:
